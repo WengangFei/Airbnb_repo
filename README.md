@@ -1,2 +1,2 @@
 # Airbnb_repo
-Using real to create a Airbnb like app
+Using React to create an Airbnb app.
