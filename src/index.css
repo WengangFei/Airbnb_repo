@@ -1,13 +1,7 @@
-/* body {
+body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-image: url('./images/cartoon.jpeg');
-  background-repeat: no-repeat;
-  background-position: top;
-  background-color: bisque;
-  background-size:auto;
-  opacity: .2;
-} */
+}
 
 *{
   margin: 0;
@@ -29,3 +23,42 @@
   opacity: .3;
 }
 
+#root {
+  display: flex;
+  justify-content: center;
+
+}
+
+.App {
+    background-color: white;
+    width:600px;
+    min-height:750px;
+
+}
+
+.logo {
+  width: 100px;
+  height: 60px;
+}
+
+.App-header {
+  box-shadow:  0 6px 6px hsl(5deg 0% 0% / 0.3);
+}
+
+.images {
+  padding: 50px;
+}
+
+.youya {
+  width: 100px;
+  height: 80px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.youyaImage {
+  width: 150px;
+  height: 170px;
+  border-radius: 15px;
+  margin: 20px;
+}
