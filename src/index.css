@@ -15,12 +15,13 @@ body {
   position: absolute;
   top:0;
   left:0;
-  height:100%;
+  height:150%;
   width:100%;
   background-image: url('./images/cartoon.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: .3;
+  opacity: .5;
+  /* z-index: -1; */
 }
 
 #root {
@@ -31,22 +32,27 @@ body {
 
 .App {
     background-color: white;
-    width:600px;
-    min-height:750px;
-
+    width:500px;
+    height: auto;
+    position: relative;
+    margin: 50px;
+    border-radius: 10px;
 }
 
 .logo {
   width: 100px;
   height: 60px;
+ 
 }
 
 .App-header {
   box-shadow:  0 6px 6px hsl(5deg 0% 0% / 0.3);
+  border-radius: 10px 10px 0 0;
 }
 
 .images {
   padding: 50px;
+ 
 }
 
 .youya {
@@ -56,9 +62,40 @@ body {
   border-radius: 10px;
 }
 
+.fa-heart {
+  color: red;
+  position: absolute;
+  margin: 5px 0 0 20px;
+}
+
 .youyaImage {
-  width: 150px;
+  width: 140px;
   height: 170px;
   border-radius: 15px;
-  margin: 20px;
+  margin: 0 10px;
+
+}
+
+.fa-star {
+  cursor: pointer;
+  color: rgb(226, 233, 10);
+}
+
+.but {
+  pointer-events: "auto";
+}
+
+.description {
+  font-size:smaller;
+  margin:0 20px;
+}
+
+.imageSection {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.intro-section {
+  margin:15px 0 55px 45px;
 }

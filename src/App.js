@@ -10,6 +10,7 @@ function App() {
       <Images />
       <Intro />
       <List />
+    
     </div>
   );
 }
