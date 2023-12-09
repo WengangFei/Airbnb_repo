@@ -20,7 +20,7 @@ body {
   background-image: url('./images/cartoon.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: .5;
+  /* opacity: .5; */
   /* z-index: -1; */
 }
 
@@ -32,34 +32,43 @@ body {
 
 .App {
     background-color: white;
-    width:500px;
+    width:auto;
     height: auto;
     position: relative;
     margin: 50px;
     border-radius: 10px;
 }
 
-.logo {
-  width: 100px;
-  height: 60px;
- 
+.App-header {
+  box-shadow:  0 6px 6px hsla(0, 1%, 55%, 0.3);
+  border-radius: 10px 10px 0 0;
+  height: 70px;
+  display: flex;
+  padding: 5px;
+
 }
 
-.App-header {
-  box-shadow:  0 6px 6px hsl(5deg 0% 0% / 0.3);
-  border-radius: 10px 10px 0 0;
+.greet {
+  margin: auto;
+  font-family:fantasy;
+  color: rgb(112, 6, 234);
+}
+
+.App-header nav {
+  margin-left: auto;
 }
 
 .images {
   padding: 50px;
- 
 }
 
-.youya {
-  width: 100px;
-  height: 80px;
+.cherry {
+  width: 400px;
+  height: 300px;
   margin: 10px;
   border-radius: 10px;
+  display: block;
+  margin: auto;
 }
 
 .fa-heart {
@@ -79,6 +88,7 @@ body {
 .fa-star {
   cursor: pointer;
   color: rgb(226, 233, 10);
+  font-size: smaller;
 }
 
 .but {
@@ -92,10 +102,15 @@ body {
 
 .imageSection {
   display: flex;
-  justify-content: center;
+  align-items: center;
   margin: 50px;
 }
 
 .intro-section {
   margin:15px 0 55px 45px;
+}
+
+.grey {
+  color: rgb(167, 166, 163);
+  font-size: smaller;
 }

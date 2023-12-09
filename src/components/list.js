@@ -31,7 +31,7 @@ export default function List(){
                 <img src={ img } alt="youya" className='youyaImage'/>
                 <div className="description">
                     <i className="fa-solid fa-star"></i>
-                    <span>{ point }(3)-{ nation }</span>
+                    <span className="grey">{ point } - { nation }</span>
                     <p>Life lesson with youya</p>
                     <h5>From 100USD/night</h5>
                 </div>
