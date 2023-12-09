@@ -1,32 +1,10 @@
-import youya1 from '../images/youya1.jpeg';
-import youya2 from '../images/youya2.jpeg';
-import youya4 from '../images/youya4.jpeg';
+export default function List({ data }){
 
-export default function List(){
-    let arr = [
-        {
-            img:youya1,
-            point: 5,
-            nation: "Japan"
-        },
-        {
-            img:youya2,
-            point: 4.7,
-            nation: "China"
-        },
-        {
-            img:youya4,
-            point: 4.4,
-            nation: "Japan"
-        }
-    ];
-
-
-    let singleInfo = function({img,point,nation}){
+    let singleInfo = function({id,img,point,nation}){
         return (
-            <div>
+            <div key={ id }>
                 <div>
-                    <i class="fa-solid fa-heart"></i>
+                    <i className="fa-solid fa-heart"></i>
                 </div>
                 <img src={ img } alt="youya" className='youyaImage'/>
                 <div className="description">
@@ -40,7 +18,7 @@ export default function List(){
         
     }
     
-    let result = arr.map((item)=>singleInfo(item));
+    let result = data.map((item)=>singleInfo(item));
     
     
     return <div className="imageSection">{ result }</div>;
